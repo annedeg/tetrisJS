@@ -462,7 +462,9 @@ function createGhost(currentPiece) {
 		let pieceX = save[piecePart][0];
 		let pieceY = save[piecePart][1];
 		ghost[piecePart] = [pieceX, pieceY];
-		board[pieceX][pieceY] = 3;
+		if(board[pieceX][pieceY] === 0) {
+			board[pieceX][pieceY] = 3;
+		}
 	}
 }
 
