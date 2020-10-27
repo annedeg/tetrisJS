@@ -114,6 +114,7 @@ function delCurPiece() {
 		let y = piece[piecePart][1];
 		board[x][y] = 0;
 	}
+	currentPiecePosition = 0;
 }
 
 function savePiece() {
